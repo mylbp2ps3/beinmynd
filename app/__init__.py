@@ -1,6 +1,7 @@
-from flask import Flask, render_template, url_for, send_from_directory
+from flask import Flask, render_template, send_from_directory
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+
 
 @app.route("/")
 def index():
@@ -9,7 +10,8 @@ def index():
 
 @app.route("/datasets/<dataset_file>/")
 def datasets(dataset_file):
-	return send_from_directory('static', "sample_datasets/" + dataset_file)
+    return send_from_directory('static', "sample_datasets/" + dataset_file)
+
 
 if __name__ == "__main__":
     app.run()
