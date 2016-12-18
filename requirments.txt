@@ -13,5 +13,3 @@ sqlalchemy-migrate==0.10.0
 sqlparse==0.2.2
 Tempita==0.5.2
 Werkzeug==0.11.11
-Pip==8.1.2
-Setuptools==23.1.0
