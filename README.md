@@ -1,1 +1,1 @@
-# beinmynd
+## Welcome to beinmynd!
